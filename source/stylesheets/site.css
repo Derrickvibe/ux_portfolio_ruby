@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  html {
+    font-family: Lexend, Gilroy, system-ui, sans-serif;
+  }
+}
+
+body {
+  @apply bg-transparent;
+}
+
+@media screen and (max-width: 1024px)  {
+  .hero {
+    padding-top: 150px;
+}
+}
+
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: bold;
+  src: url('/source//fonts/Gilroy-Bold.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: normal;
+  src: url('source//fonts/Gilroy-Regular.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 500;
+  src: url('source//fonts/Gilroy-Medium.otf') format("opentype");
+ 
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 300;
+  src: url('/source//fonts/Gilroy-Light.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 600;
+  src: url('/source/fonts/Gilroy-SemiBold.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 100;
+  src: url('/source//fonts/Gilroy-Thin.otf') format("opentype");
+}
+
