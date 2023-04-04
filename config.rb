@@ -9,17 +9,22 @@ end
 # https://middlemanapp.com/basics/layouts/
 
 # Per-page layout changes
-page '/*.xml', layout: false
-page '/*.json', layout: false
-page '/*.txt', layout: false
-page "/contact.html", :layout => "nofooter"
+page "/*.xml", layout: false
+page "/*.json", layout: false
+page "/*.txt", layout: false
+page "/contact.html", layout: "nofooter"
 
 activate :livereload
 activate :external_pipeline,
-  name: :tailwind,
-  command: "npx tailwindcss -i ./source/stylesheets/site.css -o ./dist/stylesheets/site.css #{"--watch" unless build?}",
-  latency: 2,
-  source: "./dist/"
+         name: :tailwind,
+         command:
+           "npx tailwindcss -i ./source/stylesheets/site.css -o ./dist/stylesheets/site.css #{"--watch" unless build?}",
+         latency: 2,
+         source: "./dist/"
+
+activate :google_analytics do |ga|
+  ga.tracking_id = "G-BRM6ZZR6SL" # Replace with your property ID.
+end
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'

@@ -17,20 +17,20 @@
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
-  <!-- Google tag (gtag.js) -->
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P186BW2MQK"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BRM6ZZR6SL"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-P186BW2MQK');
+  gtag('config', 'G-BRM6ZZR6SL');
 </script>
 
   <body class="bg-black font-Lexend">
    <%= partial "partials/header" %>
     <%= yield %>
    <%= partial "partials/footer" %>
+   <%= google_analytics_tag %>
   </body>
 </html>
