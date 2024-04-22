@@ -22,9 +22,7 @@ activate :external_pipeline,
          latency: 2,
          source: "./dist/"
 
-activate :google_analytics do |ga|
-  ga.tracking_id = "G-BRM6ZZR6SL" # Replace with your property ID.
-end
+
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
